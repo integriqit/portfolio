@@ -6,9 +6,9 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Corporate Headquarters',
-      details: 'Road: 33, House: 6, Gulshan, Dhaka, Bangladesh',
+      details: 'A K Peach Tower, 1/3, 40 ft Main Road, Mohammadpur, Dhaka 1207',
     },
-    { icon: Phone, title: 'Institutional Routing Desk', details: '+880 1717-797343' },
+    { icon: Phone, title: 'Institutional Routing Desk', details: '+88 0162-9798992' },
     { icon: Mail, title: 'Communications Hub', details: 'integriqit@gmail.com' },
     { icon: Clock, title: 'System Support Windows', details: '24/7 Monitored Infrastructure' },
   ];
