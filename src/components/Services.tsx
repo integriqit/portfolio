@@ -5,7 +5,7 @@ import { services } from '../data/services';
 
 const Services = () => {
   return (
-    <section id="services" className="py-10 bg-dark-surface/50 relative overflow-hidden">
+    <section id="solutions" className="py-10 bg-dark-surface/50 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_500px_at_50%_200px,hsl(280_100%_70%/0.1),transparent)]"></div>

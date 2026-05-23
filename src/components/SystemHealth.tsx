@@ -1,6 +1,6 @@
 import { Activity, Cpu, ShieldCheck, Zap } from 'lucide-react';
 
-export default function SystemHealth() {
+const SystemHealth = () => {
   const metrics = [
     {
       icon: Activity,
@@ -29,7 +29,10 @@ export default function SystemHealth() {
   ];
 
   return (
-    <section className="bg-[#0B0F17] text-white py-24 px-6 sm:px-12 md:px-24 relative overflow-hidden border-b border-gray-950">
+    <section
+      id="security"
+      className="bg-[#0B0F17] text-white py-24 px-6 sm:px-12 md:px-24 relative overflow-hidden border-b border-gray-950"
+    >
       {/* Background Seamless Glow Element */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-[#10B981]/5 rounded-full blur-[140px] pointer-events-none" />
 
@@ -145,4 +148,6 @@ export default function SystemHealth() {
       </div>
     </section>
   );
-}
+};
+
+export default SystemHealth;
