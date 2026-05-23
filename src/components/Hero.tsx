@@ -1,104 +1,137 @@
+import { ArrowUpRight, Cpu, Layers, Shield, Terminal } from 'lucide-react';
 import heroImage from '../assets/bg.jpg';
 
-const Hero = () => {
+export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center bg-dark-bg overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-[#0B0F17] text-white pt-28 pb-20 px-6 sm:px-12 md:px-24 overflow-hidden border-b border-gray-950"
     >
-      {/* Background Circles */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-neo-purple/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-neo-cyan/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-neo-pink/10 rounded-full blur-3xl animate-pulse"></div>
-      </div>
+      {/* Background Matrix & Flow Synchronizer */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#1f293706_1px,transparent_1px),linear-gradient(to_bottom,#1f293706_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none" />
 
-      <div className="container mx-auto px-4 lg:px-8 py-20 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8">
-            {/* Badge */}
-            {/* <div className="inline-flex items-center px-4 py-2 bg-gradient-primary/10 border border-primary/20 rounded-full">
-              <span className="text-sm font-medium text-primary">
-                🇧🇩 Bangladesh’s Trusted Fintech Partner
+      {/* Atmospheric High-Density Glow Nodes */}
+      <div className="absolute top-1/4 left-1/4 w-[500px] h-[250px] bg-[#10B981]/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-1/3 right-1/4 w-[400px] h-[200px] bg-[#10B981]/3 rounded-full blur-[120px] pointer-events-none opacity-40" />
+
+      <div className="max-w-7xl mx-auto w-full relative z-10">
+        <div className="grid lg:grid-cols-12 gap-16 items-center">
+          {/* Left Block: High-Impact Typography Core (7 Columns) */}
+          <div className="lg:col-span-7 space-y-8 text-left">
+            {/* Top Minimalist Context Tag */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#10B981]/10 border border-[#10B981]/20 rounded-md">
+              <span className="w-1 h-1 rounded-full bg-[#10B981] animate-pulse" />
+              <span className="text-[10px] font-mono font-semibold uppercase tracking-widest text-[#10B981]">
+                Platform Architecture
               </span>
-            </div> */}
-
-            {/* Heading */}
-            <h1 className="text-5xl md:text-6xl font-black text-foreground leading-tight">
-              Building the Future of
-              <span className="bg-gradient-accent bg-clip-text text-transparent block py-3">
-                Digital Finance in Bangladesh
-              </span>
-            </h1>
-
-            {/* Description */}
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              At <strong>IntegriQ IT</strong>, we empower businesses and individuals with secure,
-              reliable, and innovative digital financial solutions — making finance simpler, faster,
-              and more accessible for everyone.
-            </p>
-
-            {/* CTA */}
-            {/* <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="premium" size="lg" className="text-lg px-8 py-6">
-                Get Started
-              </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-                Live Demo
-              </Button>
-            </div> */}
-
-            {/* Stats */}
-            {/* <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center group">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-gradient-surface rounded-xl group-hover:shadow-neon transition-all duration-300">
-                    <TrendingUp className="h-6 w-6 text-neo-purple" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-foreground">50+</div>
-                <div className="text-sm text-muted-foreground">Clients</div>
-              </div>
-              <div className="text-center group">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-gradient-surface rounded-xl group-hover:shadow-neon transition-all duration-300">
-                    <Shield className="h-6 w-6 text-neo-cyan" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-foreground">100%</div>
-                <div className="text-sm text-muted-foreground">Secure</div>
-              </div>
-              <div className="text-center group">
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-gradient-surface rounded-xl group-hover:shadow-neon transition-all duration-300">
-                    <Zap className="h-6 w-6 text-neo-pink" />
-                  </div>
-                </div>
-                <div className="text-2xl font-bold text-foreground">24/7</div>
-                <div className="text-sm text-muted-foreground">Support</div>
-              </div>
-            </div> */}
-          </div>
-
-          {/* Right Content: Hero Image */}
-          <div className="relative">
-            <div className="relative z-10 group">
-              <img
-                src={heroImage}
-                alt="IntegriQ IT Solutions"
-                className="w-full h-auto rounded-xl shadow-elevated"
-              />
-              <div className="absolute inset-0 bg-gradient-accent opacity-10 rounded-xl blur-lg group-hover:opacity-20 transition-opacity duration-500"></div>
             </div>
 
-            {/* Floating Accent */}
-            <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-primary rounded-xl shadow-neon animate-float opacity-80"></div>
+            {/* Structured Image-Inspired Slogan Sizing */}
+            <div className="space-y-2">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-none">
+                Reliable Software Solutions for
+              </h1>
+              <span className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight block leading-none bg-gradient-to-r from-[#10B981] via-emerald-500 to-teal-600 bg-clip-text text-transparent opacity-95 uppercase">
+                Next-Gen <span className="text-white">Platforms</span>
+              </span>
+            </div>
+
+            {/* Highly Polished Corporate Description */}
+            <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-xl font-normal text-justify">
+              At <strong className="text-white font-semibold">IntegriQ IT</strong>, we engineer
+              fault-tolerant architectures and high-throughput digital systems. Empowering
+              forward-thinking enterprises with unbreakable backend infrastructure, modular service
+              layers, and rapid, secure deployment pipelines.
+            </p>
+
+            {/* Dual High-Spec CTA Buttons */}
+            <div className="flex flex-wrap items-center gap-4 pt-2">
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center px-6 py-3 bg-[#10B981] hover:bg-[#0d9668] text-[#0B0F17] font-bold text-xs tracking-wide uppercase rounded-xl transition-all duration-300 shadow-[0_4px_25px_rgba(16,185,129,0.15)] group"
+              >
+                <span>Our Services</span>
+                <ArrowUpRight className="w-3.5 h-3.5 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center px-6 py-3 bg-transparent hover:bg-gray-900/40 text-gray-200 hover:text-white font-bold text-xs tracking-wide uppercase rounded-xl border border-gray-800 hover:border-gray-700 transition-all duration-300"
+              >
+                <span>Connect with Us</span>
+              </a>
+            </div>
+
+            {/* Live Performance System Telemetry Blocks */}
+            <div className="grid grid-cols-3 gap-4 pt-6 max-w-lg border-t border-gray-950">
+              <div className="bg-[#111622]/20 border border-gray-900/60 p-3.5 rounded-xl">
+                <div className="text-lg md:text-xl font-bold text-white font-mono tracking-tight">
+                  50+
+                </div>
+                <div className="text-[10px] font-mono text-gray-500 uppercase tracking-wider mt-0.5">
+                  Happy Customers
+                </div>
+              </div>
+              <div className="bg-[#111622]/20 border border-gray-900/60 p-3.5 rounded-xl">
+                <div className="text-lg md:text-xl font-bold text-[#10B981] font-mono tracking-tight">
+                  99.99%
+                </div>
+                <div className="text-[10px] font-mono text-gray-500 uppercase tracking-wider mt-0.5">
+                  Core Uptime
+                </div>
+              </div>
+              <div className="bg-[#111622]/20 border border-gray-900/60 p-3.5 rounded-xl">
+                <div className="text-lg md:text-xl font-bold text-white font-mono tracking-tight">
+                  256-bit
+                </div>
+                <div className="text-[10px] font-mono text-gray-500 uppercase tracking-wider mt-0.5">
+                  AES Cipher
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Block: Secure Console Terminal Image Wrapper (5 Columns) */}
+          <div className="lg:col-span-5 relative group">
+            {/* Structural Vector Grid Backing */}
+            <div className="absolute -inset-4 bg-gradient-to-tr from-[#10B981]/10 to-transparent opacity-30 rounded-3xl blur-xl group-hover:opacity-50 transition-opacity duration-500 pointer-events-none" />
+
+            <div className="relative bg-[#111622]/40 border border-gray-900 rounded-2xl p-3 backdrop-blur-sm shadow-[0_0_60px_rgba(0,0,0,0.4)] overflow-hidden">
+              {/* Terminal Frame Top-Bar Decoration */}
+              <div className="flex items-center justify-between border-b border-gray-900 pb-2 mb-3 px-2">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-gray-800" />
+                  <span className="w-2 h-2 rounded-full bg-gray-800" />
+                  <span className="w-2 h-2 rounded-full bg-gray-800" />
+                  <span className="text-[9px] font-mono text-gray-600 ml-1.5 flex items-center gap-1">
+                    <Terminal className="w-2.5 h-2.5" /> system_telemetry.png
+                  </span>
+                </div>
+                <div className="flex gap-2">
+                  <Layers className="w-2.5 h-2.5 text-gray-700" />
+                  <Shield className="w-2.5 h-2.5 text-gray-700" />
+                </div>
+              </div>
+
+              {/* Core Hero Asset */}
+              <div className="relative rounded-lg overflow-hidden border border-gray-950/60 bg-[#0B0F17]">
+                <img
+                  src={heroImage}
+                  alt="IntegriQ IT Platform Architecture"
+                  className="w-full h-auto object-cover opacity-85 group-hover:opacity-100 group-hover:scale-[1.01] transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F17] via-transparent to-transparent opacity-40" />
+              </div>
+            </div>
+
+            {/* Minimal Code Floating Blueprint Tag */}
+            <div className="absolute -bottom-4 -left-4 bg-[#0B0F17] border border-gray-900 rounded-lg px-2.5 py-1.5 hidden sm:flex items-center gap-2 shadow-xl pointer-events-none">
+              <Cpu className="w-3 h-3 text-[#10B981]" />
+              <span className="text-[9px] font-mono text-gray-400">SYS_REV: v4.22</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Hero;
+}
