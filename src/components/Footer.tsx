@@ -52,7 +52,7 @@ const footerLinks = {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0B0F17] text-white py-5 px-6 sm:px-12 md:px-24 relative overflow-hidden border-b border-gray-950">
+    <footer className="bg-dark-surface/30 relative overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-neo-purple/5 rounded-full blur-3xl"></div>
