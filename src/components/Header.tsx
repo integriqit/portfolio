@@ -1,15 +1,15 @@
-import { Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import { cn } from "../lib/utils";
+import { Menu, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { cn } from '../lib/utils';
 
 const navItems = [
-  { id: "home", label: "Home" },
-  { id: "services", label: "Solutions" },
-  { id: "features", label: "Features" },
-  { id: "technology", label: "Technology" },
-  { id: "about", label: "About" },
-  { id: "contact", label: "Contact" },
+  { id: 'home', label: 'Home' },
+  { id: 'services', label: 'Solutions' },
+  { id: 'features', label: 'Features' },
+  { id: 'technology', label: 'Technology' },
+  { id: 'about', label: 'About' },
+  { id: 'contact', label: 'Contact' },
 ];
 
 const Header = () => {
@@ -23,7 +23,7 @@ const Header = () => {
     // Use Link for navigation instead of navigate
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       // Navigate to home with hash if element not on this page
       navigate(`/#${id}`);
@@ -32,10 +32,10 @@ const Header = () => {
 
   // Smooth scroll on Index page if hash exists
   useEffect(() => {
-    if (location.pathname === "/" && location.hash) {
-      const el = document.getElementById(location.hash.replace("#", ""));
+    if (location.pathname === '/' && location.hash) {
+      const el = document.getElementById(location.hash.replace('#', ''));
       if (el) {
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }
   }, [location]);
@@ -48,17 +48,17 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-1">
-            <div className="w-32 flex items-center justify-center shadow-glow">
+            {/* <div className="w-32 flex items-center justify-center shadow-glow">
               <img src="/logo.jpeg" alt="Logo" />
-            </div>
-            {/* <div className="flex flex-col">
+            </div> */}
+            <div className="flex flex-col">
               <span className="text-xl font-black text-foreground">
                 <span className="text-gradient">IntegriQ</span> IT
               </span>
               <span className="text-xs text-muted-foreground font-medium -mt-1">
                 Digital Solutions
               </span>
-            </div> */}
+            </div>
           </Link>
 
           {/* Desktop Menu */}
@@ -79,16 +79,12 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className={cn(
-              "lg:hidden p-3 rounded-xl transition-all duration-300",
-              "text-muted-foreground hover:text-primary hover:bg-surface-hover",
-              isMenuOpen && "bg-surface-hover text-primary"
+              'lg:hidden p-3 rounded-xl transition-all duration-300',
+              'text-muted-foreground hover:text-primary hover:bg-surface-hover',
+              isMenuOpen && 'bg-surface-hover text-primary'
             )}
           >
-            {isMenuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5" />
-            )}
+            {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
         </div>
 

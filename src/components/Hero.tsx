@@ -1,4 +1,4 @@
-import heroImage from "../assets/bg.jpg";
+import heroImage from '../assets/bg.jpg';
 
 const Hero = () => {
   return (
@@ -27,17 +27,16 @@ const Hero = () => {
             {/* Heading */}
             <h1 className="text-5xl md:text-6xl font-black text-foreground leading-tight">
               Building the Future of
-              <span className="bg-gradient-accent bg-clip-text text-transparent block mt-2">
+              <span className="bg-gradient-accent bg-clip-text text-transparent block py-3">
                 Digital Finance in Bangladesh
               </span>
             </h1>
 
             {/* Description */}
             <p className="text-xl text-muted-foreground leading-relaxed max-w-lg">
-              At <strong>IntegriQ IT</strong>, we empower businesses and
-              individuals with secure, reliable, and innovative digital
-              financial solutions — making finance simpler, faster, and more
-              accessible for everyone.
+              At <strong>IntegriQ IT</strong>, we empower businesses and individuals with secure,
+              reliable, and innovative digital financial solutions — making finance simpler, faster,
+              and more accessible for everyone.
             </p>
 
             {/* CTA */}
