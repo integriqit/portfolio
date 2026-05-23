@@ -1,7 +1,7 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/Card';
-import { services, solutions } from '../data/services';
+import { services } from '../data/services';
 
 const Services = () => {
   return (
@@ -12,13 +12,27 @@ const Services = () => {
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6">
-            <span className="bg-gradient-primary bg-clip-text text-transparent block py-2">
-              Our Digital Solutions
+        <div className="text-center mb-20 px-4">
+          {/* Monospace System Pill Badge */}
+          <div className="inline-flex items-center px-3 py-1 bg-[#10B981]/10 border border-[#10B981]/20 rounded-md mb-4 select-none">
+            <span className="text-[11px] font-mono font-semibold uppercase tracking-widest text-[#10B981]">
+              Capabilities Core
+            </span>
+          </div>
+
+          {/* Main Headliner Section */}
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
+            Our{' '}
+            <span className="bg-gradient-secondary bg-clip-text text-transparent inline-block py-2">
+              Digital Solutions
             </span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">{solutions.subtitle}</p>
+
+          {/* Subtitle Content Layer */}
+          <p className="text-sm text-gray-400 max-w-xl mx-auto mt-4 leading-relaxed font-normal">
+            Professional enterprise-ready software engineering pipelines architected for
+            high-throughput scalability and flawless operations.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

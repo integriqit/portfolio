@@ -69,9 +69,9 @@ export default function OurServices() {
               Capabilities Core
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white uppercase">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
             Our{' '}
-            <span className="bg-gradient-to-r from-[#10B981] to-[#0d9668] bg-clip-text text-transparent">
+            <span className="bg-gradient-secondary bg-clip-text text-transparent inline-block py-2">
               Services
             </span>
           </h2>

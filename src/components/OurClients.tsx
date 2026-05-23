@@ -56,9 +56,9 @@ export default function OurClients() {
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white tracking-tight leading-none">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
             Trusted by Powering <br />
-            <span className="bg-gradient-to-r from-[#10B981] to-emerald-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-secondary bg-clip-text text-transparent inline-block py-2">
               Market Leaders
             </span>
           </h2>

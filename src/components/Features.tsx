@@ -18,9 +18,9 @@ const Features = () => {
             </span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl font-black text-foreground mb-6 tracking-tight flex flex-col">
-            Smart Finance for
-            <span className="bg-gradient-secondary bg-clip-text text-transparent block py-2">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
+            Smart Finance for <br />
+            <span className="bg-gradient-secondary bg-clip-text text-transparent inline-block py-2">
               Everyday Life
             </span>
           </h2>
