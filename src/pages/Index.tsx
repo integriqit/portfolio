@@ -3,6 +3,7 @@ import Contact from '../components/Contact';
 import Faq from '../components/Faq';
 import Features from '../components/Features';
 import Hero from '../components/Hero';
+import Leadership from '../components/Leadership';
 import OurClients from '../components/OurClients';
 import OurServices from '../components/OurServices';
 import ProcessWorkflow from '../components/ProcessWorkflow';
@@ -23,6 +24,7 @@ const Index = () => {
       <Features />
       <Technology />
       <About />
+      <Leadership />
       <Contact />
       <Faq />
       <OurClients />
